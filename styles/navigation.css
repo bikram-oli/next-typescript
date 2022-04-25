@@ -1,0 +1,10 @@
+.navbar__link {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  margin: opx;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: red !important;
+}
+/*# sourceMappingURL=navigation.css.map */

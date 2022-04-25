@@ -1,7 +1,7 @@
-import { prependOnceListener } from "process";
 import Navigation from "./Navigation";
 import ThemeSwitch from "./ThemeSwitch";
 import { NextPage } from "next";
+import Header from "./Header";
 
 interface props {
   children: JSX.Element;
@@ -12,8 +12,9 @@ const Layout: NextPage<props> = (props) => {
     <section>
       <div className="bg-dark d-flex justify-content-between">
         <Navigation />
-        <ThemeSwitch/>
+        <ThemeSwitch />
       </div>
+      <Header />
       <main>{props.children}</main>
     </section>
   );

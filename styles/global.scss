@@ -1,9 +1,5 @@
-.navbar{
-    &__link{
-        color: white !important;
-        text-decoration: none;
-    }
-}
+@import "navigation";
+
 .themeicon{
     font-size: 20px;
     margin-top: 10px;
@@ -12,4 +8,26 @@
 
 .btn{
     outline: none;
+}
+.itemcard{
+    width: 450px ;
+
+    // &:hover{
+    //     transition: all 0.5s ease;
+    // }
+}
+.itemcard:after{
+    background-color: red !important;
+    height: 0;
+}
+ .itemcard:hover:after{
+     background-color: green !important;
+     height: 100%;
+ }
+
+.itemdetail{
+    width: 700px;
+    & img{
+        width: 100%;
+    }
 }
