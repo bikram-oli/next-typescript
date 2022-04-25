@@ -9,7 +9,6 @@ import { Datas } from "../../public/data"
 
 interface props{
     fetchedDatas: any
-
 }
 
 const ItemDetail: NextPage<props> = (props) => {
@@ -80,13 +79,13 @@ const ItemDetail: NextPage<props> = (props) => {
 //         ]
 // }
 
-// export async function getStaticProps(){
-//     //fetchig data
-//     return{
-//         props:{
-//            fetchedDatas: Datas
-//         }
-//     }
-// }
+export async function getStaticProps(){
+    //fetchig data
+    return{
+        props:{
+           fetchedDatas: Datas
+        }
+    }
+}
 
 export default ItemDetail;
